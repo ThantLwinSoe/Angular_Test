@@ -1,0 +1,29 @@
+<!-- *** This is HEROS ARRAY LOOP ***-->
+<h2>My Heroes</h2>
+<ul class="heroes">
+    <li *ngFor="let item of heroes">
+      <button type="button">
+        <span class="badge">{{item.id}}</span>
+        <span class="name">{{item.name}}</span>
+      </button>
+    </li>
+</ul>
+
+
+
+<!-- **** This is refrence the hero interface ***
+
+<h2>{{hero.name | uppercase}} Details</h2>
+
+<div>
+  <label for="identity">ID</label>
+  <input type="text" id="identity" placeholder="id" [(ngModel)]="hero.id">
+  <label for="name">Hero Name</label>
+  <input type="text" [(ngModel)]="hero.name" id="name" placeholder="name">
+</div>
+
+-->
+
+
+
+
