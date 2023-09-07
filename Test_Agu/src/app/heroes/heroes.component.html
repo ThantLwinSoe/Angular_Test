@@ -2,14 +2,21 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
     <li *ngFor="let item of heroes">
-      <button type="button">
+      <button type="button" (click)="onSelect(item)">
         <span class="badge">{{item.id}}</span>
         <span class="name">{{item.name}}</span>
       </button>
     </li>
 </ul>
 
-
+<div *ngIf="selectedHero">
+  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <div>id: {{selectedHero.id}}</div>
+  <div>
+    <label for="hero-name">Hero Name:</label>
+    <input type="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+  </div>
+</div>
 
 <!-- **** This is refrence the hero interface ***
 

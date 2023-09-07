@@ -1,0 +1,24 @@
+<h1>
+
+  Hello Angular
+
+</h1>
+
+<h3>
+  Welcome {{name}}
+</h3>
+<input type="text" (keyup)="reflectName(helloName.value)" class="box" [value]="name" #helloName>
+
+<h4 >
+  Age : {{data.age}}
+</h4>
+
+<h4>
+  Address : {{data.address}}
+</h4>
+
+<input type="text" class="box" [value]="data.address"><br>
+<input type="text" class="box" [value]="data.age">
+
+<br>
+<a href="#" (click)="onAgeClick()" style=" margin-top: 5rem;">AGE</a>
